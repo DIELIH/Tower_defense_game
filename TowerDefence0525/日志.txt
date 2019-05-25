@@ -1,0 +1,31 @@
+2019年5月23日15点45分
+Enemy的移速改为2，TowerFreeze的减速是1
+
+新增：
+towermagic
+towerfreeze
+ray
+ice
+
+改动：
+enemy.h:
+    void getDecelerated(double deceleration);
+    bool ifDecelerated(){return m_ifDecelerated;}
+    void recoverSpeed();
+    double m_currentSpeed;
+    bool m_ifDecelerated;
+mainwindoe.h:
+    void removeRay(Ray *ray);
+    void removeIce(Ice *ice);
+    void rayEffect(Ray *ray);
+    void iceEffect(Ice *ice);
+    void addRay(Ray *ray);
+    void addIce(Ice *ice);
+    QList<Ray *>         m_rayList;
+    QList<Ice *>         m_iceList;
+    QTimer *totalTimer;
+    将bool loadWave();移动到slots
+    void drawTime(QPainter *painter);  //绘制时间
+
+tower.h:
+

@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/pics">
+        <file>RUCmap.jpg</file>
+        <file>towerposition.png</file>
+        <file>tower.png</file>
+        <file>enemy.png</file>
+        <file>bullet.png</file>
+        <file>towermagic.png</file>
+        <file>towercannon.png</file>
+        <file>towerfreeze.png</file>
+        <file>background.jpg</file>
+    </qresource>
+</RCC>
